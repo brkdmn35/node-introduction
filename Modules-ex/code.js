@@ -6,6 +6,7 @@ const notPublic = ( ) => {};
 module.exports = {add, value: 1}
 module.exports.more = {value2: 2}
 
-const nameFn = require('./code2');
+const {action,value,userIds} = require('./code2');
 
-nameFn()
+console.log(value);   // coming from module
+console.log(private); // undefined
